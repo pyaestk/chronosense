@@ -33,3 +33,56 @@
 .description{
   padding: 10px 0 20px 0;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.image, .content {
+  grid-row: 1 / 2;
+}
+
+.content {
+  align-self: center;
+  grid-column: 4 / -1;
+  grid-row: 1 / 2;
+  padding-left: 10px;
+  background-color: #eee;
+  margin-right: 50px;
+}
+
+.image {
+  background-image: url(pexels-jeffrey-paa-kwesi-opare-2813515.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column: 1 / -1;
+  height: 350px;
+}
+
+
+@media(max-width: 500px) {
+  .content {
+      color: #eee;
+  align-self: first baseline;
+  grid-column: 2 / 5;
+  padding-left: 10px;
+  background-color: transparent;
+  margin-right: 0;
+}
+
+  .image {
+      background-image: url(pexels-jeffrey-paa-kwesi-opare-2813515.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      grid-column: 1 / -1;
+      height: 350px;
+  }
+}
