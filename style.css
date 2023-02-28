@@ -34,57 +34,106 @@
   padding: 10px 0 20px 0;
 }
 
+/* Phone Pyae Naing */
 .t-container {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   height: fit-content;
 }
 
-.wrapper {
+.t-container > .wrapper {
 display: grid;
-grid-template-columns: repeat(6, 1fr);
-grid-column: 2 / 6;
-
+grid-template-columns: repeat(10, 1fr);
+grid-column: 2 / 10;
 background-color: #eee;
-padding: 50px 0 50px 30px;
+padding: 150px 0 150px 30px;
 }
 
-.image, .wrapper{
+.t-container > .image, .t-container > .wrapper{
   grid-row: 1 / 2;
 }
 
-.image {
+.t-container > .image {
   width: 100%;
   border-radius: 10px;
-  grid-column: 5 / 7;
+  grid-column: 8 / 12;
   z-index: 1;
   align-self: center;
   object-fit: cover;
   object-position: center;
 }
 
-.content {
-  grid-column: 1 / 5;
+.wrapper > .content {
+  grid-column: 1 / 8;
+  text-align: center;
 }
 
 @media(max-width: 500px) {
 
-  .wrapper {
+  .t-container > .wrapper {
       grid-column: 1 / -1;
       grid-row: 2;
       height: fit-content;
       padding: 0;
   }
 
-  .image {
+  .t-container > .image {
       grid-column: 1 / -1;
       width: 100%;
       grid-row: 1;
   }
 
 
-  .content {
+  .t-container > .content {
       grid-column: 1 / -1;
       padding: 10px 15px 10px 15px;
     }
+}
+
+.text-on-img {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.text-on-img > .image, .text-on-img > .content {
+  grid-row: 1 / 2;
+}
+
+.text-on-img > .content {
+  align-self: center;
+  grid-column: 4 / -1;
+  grid-row: 1 / 2;
+  padding-left: 10px;
+  background-color: #eee;
+  margin-right: 50px;
+}
+
+.text-on-img > .image {
+  background-image: url(image/pexels-anuj-bansal-849701.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column: 1 / -1;
+  height: 350px;
+}
+
+
+@media(max-width: 500px) {
+  .text-on-img > .content {
+  color: #eee;
+  align-self: first baseline;
+  grid-column: 2 / 5;
+  padding-left: 10px;
+  background-color: transparent;
+  margin-right: 0;
+}
+
+  .text-on-img > .image {
+      background-image: url(image/pexels-anuj-bansal-849701.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      grid-column: 1 / -1;
+      height: 350px;
+  }
 }
