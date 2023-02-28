@@ -222,3 +222,48 @@ padding: 150px 0 150px 30px;
       grid-row: 2;
   }
 }
+
+/* footer*/
+
+:root {
+  --text-color: red;
+}
+
+#k-line {
+  background-color: #ffffff;
+  margin: auto;
+  height: 3px;
+}
+#k-hd{
+  color: #ffffff;
+  text-align: center;
+}
+.k-icon{
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.k-icon a {
+  color: var(--text-color);
+  padding: 5px 0;
+  margin: 0px 30px;
+  transition: all .50s ease;
+}
+
+.k-icon a:hover {
+  color: var(--main-color);
+}
+
+#k-foot{
+  text-align: center;
+  color: #ffffff;
+  margin: auto;
+}
+
+#k-foot1{
+  text-align: center;
+  color: #ffffff;
+  margin-top: 5%;
+}
+
