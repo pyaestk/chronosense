@@ -267,3 +267,40 @@ padding: 150px 0 150px 30px;
   margin-top: 5%;
 }
 
+#k-head{
+  background: transparent;
+}
+
+
+
+.navbar a {
+  font-size: 30;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 20px;
+  transition: all .50s ease;
+}
+
+.navbar a:hover {
+  color: var(--text-color);
+}
+
+#k-btn{
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  margin-top: 2%;
+}
+#k-srh{
+  background: transparent;
+  border-color: #ffffff;
+  border-radius: 10px;
+  border-width: 1px;
+  text-align: center;
+  color: #ffffff;
+  width: 130px;
+  margin-top: 3%;
+}
+
+
+
