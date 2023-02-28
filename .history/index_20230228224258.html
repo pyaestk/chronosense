@@ -61,7 +61,7 @@
       <div class="col-md-7">
 
         <div class="slide-container swiper">
-          <div class="slide-content">
+          <div class="slide-content2">
             <div class="card-wrapper swiper-wrapper">
               <div class="swiper-slide">
                 <div class="item-card">
@@ -111,9 +111,9 @@
             </div>
           </div>
 
-          <div class="swiper-button-next swiper-button-next1"></div>
-          <div class="swiper-button-prev swiper-button-prev1"></div>
-          <div class="swiper-pagination swiper-pagination1"></div>
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
         </div>
 
       </div>
@@ -121,6 +121,20 @@
     <hr>
   </div>
   <!--end pyae sone-->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
 
   <!--item carousel pyae sone-->
   <!--carousel 2-->
@@ -130,7 +144,7 @@
       <div class="col-md-7 order">
 
         <div class="slide-container swiper">
-          <div class="slide-content2">
+          <div class="slide-content">
             <div class="card-wrapper swiper-wrapper">
               <div class="swiper-slide">
                 <div class="item-card">
@@ -180,9 +194,9 @@
             </div>
           </div>
 
-          <div class="swiper-button-next swiper-button-next2"></div>
-          <div class="swiper-button-prev swiper-button-prev2"></div>
-          <div class="swiper-pagination swiper-pagination2"></div>
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
         </div>
 
       </div>
@@ -190,7 +204,8 @@
       <div class="col-md-5 d-flex align-items-center">
         <div class="heading text-end pe-5 pt-4">
           <h2>Meet our Stylish watch</h2>
-          <p class="text-secondary">Designed for those who appreciate quality and style, our watches are a statement piece that will never go out of fashion.</p>
+          <p class="text-secondary">Timeless elegance meets modern design in every watch we create, perfect for those
+            who appreciate both form and function.</p>
           <button>LEARN MORE</button>
         </div>
       </div>

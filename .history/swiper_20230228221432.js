@@ -1,4 +1,4 @@
-var swiper = new Swiper(".slide-content", {
+var swiper = new Swiper("#carousel1", {
   slidesPerView: 3,
   spaceBetween: 0,
   loop: true,
@@ -6,13 +6,13 @@ var swiper = new Swiper(".slide-content", {
   fade: 'true',
   // grabCursor: 'true',
   pagination: {
-    el: ".swiper-pagination1",
+    el: ".swiper-pagination",
     clickable: true,
     dynamicBullets: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next1",
-    prevEl: ".swiper-button-prev1",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 
   breakpoints:{
@@ -24,31 +24,22 @@ var swiper = new Swiper(".slide-content", {
       },
   },
 });
-var swiper = new Swiper(".slide-content2", {
+var swiperr = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 0,
   loop: true,
   centerSlide: 'true',
   fade: 'true',
-  // grabCursor: 'true',
-  pagination: {
-    el: ".swiper-pagination2",
-    clickable: true,
-    dynamicBullets: true,
-  },
+  cssMode: true,
   navigation: {
-    nextEl: ".swiper-button-next2",
-    prevEl: ".swiper-button-prev2",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
-
-  breakpoints:{
-      400: {
-          slidesPerView: 2,
-      },
-      950: {
-          slidesPerView: 3,
-      },
+  pagination: {
+    el: ".swiper-pagination",
   },
+  mousewheel: true,
+  keyboard: true,
 });
 
 

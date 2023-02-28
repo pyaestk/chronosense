@@ -1,0 +1,17 @@
+@media only screen and (max-width: 767px){
+    /* pyae sone carousel 1 */
+    .ps .heading{
+        text-align: center;
+        font-size: 14px;
+        padding-left: 0!important;
+    }
+    .ps .heading button{
+        width: 100%;
+    }
+    .ps .swiper-button-next, .ps .swiper-button-prev{
+        display: none;
+    }
+    .ps .slide-container{
+        padding: 0;
+    }
+}
