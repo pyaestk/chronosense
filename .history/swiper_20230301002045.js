@@ -52,7 +52,7 @@ var swiper = new Swiper(".slide-content2", {
 });
 
 var swiper = new Swiper(".mySwiper", {
-  loop: true,
+  spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
     delay: 2500,

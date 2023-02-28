@@ -66,7 +66,7 @@ body{
   background-color: #000 !important;
 }
 
-.hero .background-video{
+.background-video{
   position: relative;
   object-fit: cover;
   z-index: -10;
@@ -75,20 +75,13 @@ body{
   height: 530px;
   overflow: hidden;
 }
-.hero .text-box{
+.text-box{
   position: absolute;
-  width: 50vw;
+  width: 100vw;
   top: 35%;
   left: 10%;
 }
-.media{
-  width: 50vw;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-}
-
-.hero .text-box h1{
+.text-box h1{
   font-size: 40pt;
   font-weight: bolder;
   color: transparent;
@@ -96,12 +89,12 @@ body{
   -webkit-background-clip: text;
   -webkit-text-stroke-width: 1.5px;
 }
-.hero .text-box p{
+.text-box p{
   font-size: 20px;
   color: white;
   line-height: 35px;
 }
-.hero .text-box button{
+.text-box button{
   margin-top: 15px;
   background-color: rgba(255, 255, 255, 0.623);
   color: rgb(0, 0, 0);
@@ -111,7 +104,7 @@ body{
   outline: 1px solid #ffffff;
   outline-offset: 2px;
 }
-.hero .text-box button:hover{
+.text-box button:hover{
   background-color: rgb(255, 255, 255);
   outline: 2px solid #ffffff;
   outline-offset: -5px;
