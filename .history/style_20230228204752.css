@@ -31,7 +31,7 @@ body{
   flex-direction: column;
 }
 .ps .item-card:hover{
-  outline: 1px solid rgb(37, 37, 37);
+  outline: 1px solid rgb(126, 126, 126);
   outline-offset: -10px;
 }
 .ps .item-card img{
