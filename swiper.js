@@ -52,12 +52,10 @@ var swiper = new Swiper(".slide-content2", {
 });
 
 var swiper = new Swiper(".mySwiper", {
+  speed: 600,
+  parallax: true,
   loop: true,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
