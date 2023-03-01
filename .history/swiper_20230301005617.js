@@ -15,13 +15,13 @@ var swiper = new Swiper(".slide-content", {
     prevEl: ".swiper-button-prev1",
   },
 
-  breakpoints: {
-    400: {
-      slidesPerView: 2,
-    },
-    950: {
-      slidesPerView: 3,
-    },
+  breakpoints:{
+      400: {
+          slidesPerView: 2,
+      },
+      950: {
+          slidesPerView: 3,
+      },
   },
 });
 var swiper = new Swiper(".slide-content2", {
@@ -41,13 +41,13 @@ var swiper = new Swiper(".slide-content2", {
     prevEl: ".swiper-button-prev2",
   },
 
-  breakpoints: {
-    400: {
-      slidesPerView: 2,
-    },
-    950: {
-      slidesPerView: 3,
-    },
+  breakpoints:{
+      400: {
+          slidesPerView: 2,
+      },
+      950: {
+          slidesPerView: 3,
+      },
   },
 });
 
@@ -87,19 +87,21 @@ function realtimeClock() {
   seconds = ("0" + seconds).slice(-2);
 
   document.getElementById('clock').innerHTML =
-    hours + "  :  " + minutes + "  :  " + seconds + "   " + amPm;
+      hours + "  :  " + minutes + "  :  " + seconds + "   " + amPm;
   var t = setTimeout(realtimeClock, 500);
 }
 
 let n;
 
 document.getElementById("cal1").onclick = function () {
-  n = document.getElementById("k-username").value;
-
+  n = document.getElementById("username").value;
+  const c = document.getElementById("rda");
+  const f = document.getElementById("rda1");
   if (n < 0 || n > 0) {
-    window.alert("Numbers are not accepted. Enter only words!");
-  } else {
-    document.getElementById("user").innerHTML = n;
-
+      window.alert("Numbers are not accepted. Enter only words!");
+  } else if (c.checked) {
+      document.getElementById("user").innerHTML = "Mr." + n;
+  } else if (f.checked) {
+      document.getElementById("user").innerHTML = "Mrs." + n;
   }
 }
