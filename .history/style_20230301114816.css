@@ -66,7 +66,7 @@ body{
   background-color: #000 !important;
 }
 
-/* .hero .background-video{
+.hero .background-video{
   position: relative;
   object-fit: cover;
   z-index: -10;
@@ -115,7 +115,7 @@ body{
   background-color: rgb(255, 255, 255);
   outline: 2px solid #ffffff;
   outline-offset: -5px;
-} */
+}
 
 
 
@@ -252,7 +252,7 @@ padding: 150px 0 150px 30px;
 .text-on-img-con {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  /* margin-top: 25px; */
+  margin-top: 25px;
 }
 
 .text-on-img-con > .image, .text-on-img-con > .content {

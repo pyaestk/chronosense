@@ -122,7 +122,7 @@ body{
 
 
 .video-background {
-  position: fixed;
+  position: relative;
   top: 0;
   right: 0;
   bottom: 0;
@@ -141,6 +141,7 @@ body{
 }
 
 .content {
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -252,7 +253,7 @@ padding: 150px 0 150px 30px;
 .text-on-img-con {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  /* margin-top: 25px; */
+  margin-top: 25px;
 }
 
 .text-on-img-con > .image, .text-on-img-con > .content {
