@@ -1,0 +1,170 @@
+body{
+  background-color: black!important;
+}
+.ps{
+  background-color: white;
+}
+
+.heading button{
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 13px;
+  transition: .2s;
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+.heading button:hover{
+  background-color: rgb(0, 0, 0);
+  outline: 2px solid #ffffff;
+  outline-offset: -5px;
+}
+.ps .item-card img{
+  width: 90%;
+  margin: auto;
+  padding: 30px 0 5px 0;
+}
+
+.ps .item-card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.ps .item-card:hover{
+  outline: 1px solid rgb(37, 37, 37);
+  outline-offset: -10px;
+}
+.ps .item-card img{
+  transition: .3s ease-in-out;
+}
+.ps .item-card:hover img{
+  cursor: pointer;
+  transform: scale(1.04);
+}
+.ps .description{
+  padding: 5px 0 20px 0;
+}
+
+
+.ps .slide-content, .slide-content2{
+  margin: 10px 40px 25px 40px;
+  overflow: hidden;
+}
+.ps .swiper-button-next2{
+  right: 0!important;
+  color: black!important;
+}
+.ps .swiper-button-prev{
+  left: 0!important;
+  color: black!important;
+}
+.ps .swiper-pagination-bullet-active {
+  background-color: #000 !important;
+}
+
+
+
+
+/* Phone Pyae Naing */
+.t-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: fit-content;
+}
+
+.t-container > .wrapper {
+display: grid;
+grid-template-columns: repeat(10, 1fr);
+grid-column: 2 / 10;
+background-color: #eee;
+padding: 150px 0 150px 30px;
+}
+
+.t-container > .image, .t-container > .wrapper{
+  grid-row: 1 / 2;
+}
+
+.t-container > .image {
+  width: 100%;
+  border-radius: 10px;
+  grid-column: 8 / 12;
+  z-index: 1;
+  align-self: center;
+  object-fit: cover;
+  object-position: center;
+}
+
+.wrapper > .content {
+  grid-column: 1 / 8;
+  text-align: center;
+}
+
+@media(max-width: 500px) {
+
+  .t-container > .wrapper {
+      grid-column: 1 / -1;
+      grid-row: 2;
+      height: fit-content;
+      padding: 0;
+  }
+
+  .t-container > .image {
+      grid-column: 1 / -1;
+      width: 100%;
+      grid-row: 1;
+  }
+
+
+  .t-container > .content {
+      grid-column: 1 / -1;
+      padding: 10px 15px 10px 15px;
+    }
+}
+
+.text-on-img {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.text-on-img > .image, .text-on-img > .content {
+  grid-row: 1 / 2;
+}
+
+.text-on-img > .content {
+  align-self: center;
+  grid-column: 4 / -1;
+  grid-row: 1 / 2;
+  padding-left: 10px;
+  background-color: #eee;
+  margin-right: 50px;
+}
+
+.text-on-img > .image {
+  background-image: url(image/pexels-anuj-bansal-849701.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column: 1 / -1;
+  height: 350px;
+}
+
+
+@media(max-width: 500px) {
+  .text-on-img > .content {
+  color: #eee;
+  align-self: first baseline;
+  grid-column: 2 / 5;
+  padding-left: 10px;
+  background-color: transparent;
+  margin-right: 0;
+}
+
+  .text-on-img > .image {
+      background-image: url(image/pexels-anuj-bansal-849701.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      grid-column: 1 / -1;
+      height: 350px;
+  }
+}

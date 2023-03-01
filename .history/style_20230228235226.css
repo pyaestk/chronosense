@@ -1,0 +1,240 @@
+body{
+  background-color: black!important;
+}
+
+/* Pyae sone */
+/* carousel items on homepage */
+.ps{
+  background-color: white;
+}
+
+.heading button{
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 13px;
+  transition: .2s;
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+.heading button:hover{
+  background-color: rgb(0, 0, 0);
+  outline: 2px solid #ffffff;
+  outline-offset: -5px;
+}
+.ps .item-card img{
+  width: 90%;
+  margin: auto;
+  padding: 30px 0 5px 0;
+}
+
+.ps .item-card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.ps .item-card:hover{
+  outline: 1px solid rgb(37, 37, 37);
+  outline-offset: -10px;
+}
+.ps .item-card img{
+  transition: .3s ease-in-out;
+}
+.ps .item-card:hover img{
+  cursor: pointer;
+  transform: scale(1.04);
+}
+.ps .description{
+  padding: 5px 0 20px 0;
+}
+
+
+.ps .slide-content, .slide-content2{
+  margin: 10px 40px 25px 40px;
+  overflow: hidden;
+}
+.ps .swiper-button-next{
+  right: 0!important;
+  color: black!important;
+}
+.ps .swiper-button-prev{
+  left: 0!important;
+  color: black!important;
+}
+.ps .swiper-pagination-bullet-active {
+  background-color: #000 !important;
+}
+
+.video-background {
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  object-position: center;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 90vh;
+  z-index: -1;
+}
+
+
+
+/* Phone Pyae Naing */
+
+/* Image on Text */
+.image-side-text-con {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: fit-content;
+}
+
+.image-side-text-con > .wrapper {
+display: grid;
+grid-template-columns: repeat(10, 1fr);
+grid-column: 2 / 10;
+background-color: #ffffff;
+padding: 150px 0 150px 30px;
+}
+
+.image-side-text-con > .image, .image-side-text-con > .wrapper{
+  grid-row: 1 / 2;
+}
+
+.image-side-text-con > .image {
+  width: 100%;
+  border-radius: 10px;
+  grid-column: 8 / 12;
+  z-index: 1;
+  align-self: center;
+  object-fit: cover;
+  object-position: center;
+}
+
+.wrapper > .content {
+  grid-column: 1 / 8;
+  text-align: center;
+}
+
+@media(max-width: 500px) {
+
+  .image-side-text-con > .wrapper {
+      grid-column: 1 / -1;
+      grid-row: 2;
+      height: fit-content;
+      padding: 0;
+  }
+
+  .image-side-text-con > .image {
+      grid-column: 1 / -1;
+      width: 100%;
+      grid-row: 1;
+  }
+
+
+  .image-side-text-con > .content {
+      grid-column: 1 / -1;
+      padding: 10px 15px 10px 15px;
+    }
+}
+
+/* Text On Image */
+.text-on-img-con {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 25px;
+}
+
+.text-on-img-con > .image, .text-on-img-con > .content {
+  grid-row: 1 / 2;
+}
+
+.text-on-img-con > .content {
+  align-self: center;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  padding-left: 10px;
+  background-color: #eee;
+  margin-left: 50px;
+  margin-bottom: 0px;
+}
+
+.text-on-img-con > .content.right {
+  grid-column: 4 / -1;
+  margin: auto 50px auto 0;
+}
+
+.text-on-img-con > .image {
+  background-image: url(image/pexels-anuj-bansal-849701.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column: 1 / -1;
+  height: 350px;
+}
+
+
+@media(max-width: 500px) {
+  .text-on-img-con > .content {
+  color: #eee;
+  align-self: first baseline;
+  grid-column: 2 / 5;
+  padding-left: 10px;
+  background-color: transparent;
+  margin-left: 0;
+}
+
+  .text-on-img-con > .image {
+      background-image: url(image/pexels-anuj-bansal-849701.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      grid-column: 1 / -1;
+      height: 350px;
+  }
+}
+
+/* Text Side Image */
+.text-side-image-con {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.text-side-image-con > .image, .text-side-image-con > .content {
+  grid-row: 1 / 2;
+}
+
+.text-side-image-con > .image {
+  background-image: url(image/push-SP-Moonwatch-gold-cal3861-home-large.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  grid-column: 2 / 10;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.text-side-image-con > .content {
+  align-self: center;
+  background-color: #eee;
+  border-radius: 10px;
+  grid-column: 8 / 12;
+  grid-row: 1 / 2;
+  padding: 50px 10px 50px 10px;
+}
+
+@media(max-width: 500px) {
+
+  .text-side-image-con > .image {
+      grid-column: 1 / -1;
+      width: 100%;
+      grid-row: 1;
+  }
+
+  .text-side-image-con > .content {
+      background-color: #eee;
+      grid-column: 1 / -1;
+      grid-row: 2;
+  }
+}
