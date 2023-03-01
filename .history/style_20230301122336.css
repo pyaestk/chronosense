@@ -128,7 +128,7 @@ body {
 
 
 
-.viddeo-background {
+.video-background {
   position: fixed;
   top: 0;
   right: 0;
@@ -156,6 +156,14 @@ body {
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .left-column,
+  .right-column {
+    max-width: 100%;
+    padding: 0 30px;
+    text-align: center;
+  }
+}
 
 
 
