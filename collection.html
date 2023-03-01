@@ -72,31 +72,33 @@
 
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-3">
-                <h2 id="k-hd2">Sign In</h2>
-                <br><br><br>
-                <form id="k-fom">
-                    <label>
-                        <font id="k-lbl">Name : </font>
-                    </label>
-                    <input type="text" id="k-username" placeholder="Enter Your Name" class="form">
-                    <br><br>
-                    <label>
-                        <font id="k-lbl">E-mail : </font>
-                    </label>
-                    <input type="email" id="k-userpw" placeholder="Enter Email" class="form">
-                    <br><br>
-                    <label>
-                        <font id="k-lbl">Password : </font>
-                    </label>
-                    <input type="password" id="k-userpw" placeholder="Enter Password" class="form">
-                    <br><br>
-                    <button type="button" id="cal1" class="k-border1">Log In</button>
-                </form>
+            <div class="col-lg-12 col-md-6 col-sm-3">
+                <h3 id="k-hd">Heading</h3>
+                <br>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6"></div>
+        </div>
+        <div class="row" id="k-hd">
+            <div class="col-lg-4 col-md-4 col-sm-3"></div>
+            <div class="col-lg-4 col-md-4 col-sm-3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum dicta officia soluta dolor! Quis
+                eaque
+                doloremque, nostrum vel dicta iure
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-3"></div>
+        </div>
+        <br><br>
+        <div class="container-fluid row k-collect">
+            <div class="col-lg-4 col-md-6 col-sm-3">
+                <img src="image/w.png" width="250px">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-3">
+                <img src="image/ww.png" width="250px">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-3">
+                <img src="image/www.png" width="250px">
+            </div>
         </div>
     </div>
 
@@ -104,10 +106,6 @@
 
     <div class="container-fluid bg-black">
         <br><br>
-
-        <hr id="k-line" width="900px">
-
-        <br>
         <h3 id="k-hd">Follow us on : </h3>
         <br>
         <div class="container">
@@ -131,6 +129,8 @@
                 </div>
             </div>
         </div>
+        <br><br>
+      <hr id="k-line" width="800px">
 
         <div class="container">
             <div class="row">
@@ -166,25 +166,24 @@
             </div>
         </div>
     </div>
-
-
-    <!--swiper js-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!--js-->
-    <script src="swiper.js"></script>
-
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
-        var nav = document.querySelector('nav');
-
-        window.addEventListener('scroll', function () {
-            if (window.pageYOffset > 100) {
-                nav.classList.add('bg-dark', 'shadow');
-            } else {
-                nav.classList.remove('bg-dark', 'shadow');
-            }
-        });
-    </script>
 </body>
+
+<!--swiper js-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<!--js-->
+<script src="swiper.js"></script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+            nav.classList.add('bg-dark', 'shadow');
+        } else {
+            nav.classList.remove('bg-dark', 'shadow');
+        }
+    });
+</script>
 
 </html>
