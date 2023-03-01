@@ -42,10 +42,10 @@ var swiper = new Swiper(".slide-content2", {
   },
 
   breakpoints:{
-      300: {
+      400: {
           slidesPerView: 2,
       },
-      600: {
+      950: {
           slidesPerView: 3,
       },
   },

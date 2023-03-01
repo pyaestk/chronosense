@@ -17,10 +17,10 @@ var swiper = new Swiper(".slide-content", {
 
   breakpoints:{
       300: {
-          slidesPerView: 2,
+          slidesPerView: 1,
       },
       600: {
-          slidesPerView: 3,
+          slidesPerView: 2,
       },
   },
 });
@@ -42,10 +42,10 @@ var swiper = new Swiper(".slide-content2", {
   },
 
   breakpoints:{
-      300: {
+      400: {
           slidesPerView: 2,
       },
-      600: {
+      950: {
           slidesPerView: 3,
       },
   },
