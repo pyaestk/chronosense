@@ -5,7 +5,7 @@ var swiper = new Swiper(".slide-content", {
   centerSlide: 'true',
   fade: 'true',
   autoplay: {
-    delay: 4000,
+    delay: 2500,
     disableOnInteraction: false,
   },
   pagination: {
@@ -34,7 +34,7 @@ var swiper = new Swiper(".slide-content2", {
   centerSlide: 'true',
   fade: 'true',
   autoplay: {
-    delay: 4000,
+    delay: 3000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -63,7 +63,7 @@ var swiper = new Swiper(".slide-content3", {
   centerSlide: 'true',
   fade: 'true',
   autoplay: {
-    delay: 4000,
+    delay: 3000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -91,7 +91,7 @@ var swiper = new Swiper(".mySwiper", {
   parallax: true,
   loop: true,
   autoplay: {
-    delay: 4000,
+    delay: 3000,
     disableOnInteraction: false,
   },
   pagination: {
