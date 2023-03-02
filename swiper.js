@@ -1,5 +1,5 @@
 var swiper = new Swiper(".slide-content", {
-  slidesPerView: 3,
+  slidesPerView: 6,
   spaceBetween: 10,
   loop: true,
   centerSlide: 'true',
@@ -17,7 +17,7 @@ var swiper = new Swiper(".slide-content", {
 
   breakpoints: {
     300: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     600: {
       slidesPerView: 3,
@@ -43,10 +43,36 @@ var swiper = new Swiper(".slide-content2", {
 
   breakpoints: {
     300: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     600: {
       slidesPerView: 3,
+    },
+  },
+});
+var swiper = new Swiper(".slide-content3", {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  loop: true,
+  centerSlide: 'true',
+  fade: 'true',
+  // grabCursor: 'true',
+  pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
+  },
+
+  breakpoints: {
+    300: {
+      slidesPerView: 3,
+    },
+    600: {
+      slidesPerView: 5,
     },
   },
 });
