@@ -99,7 +99,16 @@ function realtimeClock() {
   document.getElementById('clock').innerHTML =
     hours + "  :  " + minutes + "  :  " + seconds + "   " + amPm;
   var t = setTimeout(realtimeClock, 500);
+
+  document.getElementById('clock1').innerHTML =
+    hours + "  :  " + minutes + "  :  " + seconds + "   " + amPm;
+  var h = setTimeout(realtimeClock, 500);
+
+  document.getElementById('clock3').innerHTML =
+    hours + "  :  " + minutes + "  :  " + seconds + "   " + amPm;
+  var j = setTimeout(realtimeClock, 500);
 }
+
 
 let n;
 
