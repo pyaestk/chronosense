@@ -274,7 +274,6 @@ homepage carousel end */
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin-top: 15px;
-  margin-bottom: 15px;
 }
 
 .text-on-img-con>.image,
@@ -812,19 +811,16 @@ homepage carousel end */
   padding: 100px 0;
 }
 .first-row img{
-  height: 270px;
+  height: 100%;
   object-fit: cover;
-  border: 2px solid black;
 }
 .second-row img{
-  height: 220px;
+  height: 245px;
   object-fit: cover;
-  border: 2px solid black;
 }
 .third-row img{
   height: 300px;
   object-fit: cover;
-  border: 2px solid black;
 }
 .item-detail-description{
   display: flex;
