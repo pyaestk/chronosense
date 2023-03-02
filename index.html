@@ -20,9 +20,9 @@
 <body onload="realtimeClock()">
 
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="image/logo.png" alt="" width="110px" height="90px"></a>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="image/CS__1_-removebg-preview.png" width="50px" alt=""> Chronosense</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -45,11 +45,11 @@
           </li>
           <li class="nav-item k-srh1">
             <div class="input-group mt-1 grouped-input">
-              <input type="search" class="form-control w-25 input rounded-0" placeholder="search"
+              <input type="search" class="form-control w-25 input rounded-0"
                 aria-label="Recipient's username" aria-describedby="basic-addon2" id="k-srh2">
               <div class="input-group-append">
                 <button type="button" class="btn border-1">
-                  <img src="image/search.png" width="27px" height="24px">
+                  <img src="image/search.png" width="25px" height="24px">
                 </button>
               </div>
             </div>
@@ -69,24 +69,25 @@
   <div class="hero bg-black">
     <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
       <div class="parallax-bg" data-swiper-parallax="-30%">
-        <video src="image/In_The_Making-Video-Home-WEB-16_9.mp4" loop muted autoplay></video>
+        <img src="image/push-SP-Moonwatch-gold-cal3861-home-large.png" alt="">
+        <!-- <video src="image/In_The_Making-Video-Home-WEB-16_9.mp4" loop muted autoplay></video> -->
       </div>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
 
           <div class="row item-body">
-            <div class="col-md-6">
+            <div class="col-md-6 hero-text">
               <div class="title" data-swiper-parallax="-300" id="clock"></div>
               <div class="title" data-swiper-parallax="-300">CHRONOSENSE</div>
-              <div class="subtitle" data-swiper-parallax="-200">Never miss a beat with Chronosense, the watch 
-                that tracks every second of you day
+              <div class="subtitle" data-swiper-parallax="-200">Never miss a beat with Chronosense,
+                 the watch that tracks every second of you day
               </div>
               <div class="text" data-swiper-parallax="-100">
                 <button>LEARN MORE</button>
               </div>
             </div>
             <div class="col-md-6">
-              <video src="image/In_The_Making-Video-Home-WEB-16_9.mp4" loop muted autoplay class="hero-image" width="100%"></video>
+              <video src="image/In_The_Making-Video-Home-WEB-16_9.mp4" autoplay loop muted width="100%" class="hero-image"></video>
             </div>
           </div>
 
@@ -94,7 +95,7 @@
         <div class="swiper-slide">
 
           <div class="row item-body">
-            <div class="col-md-6">
+            <div class="col-md-6 hero-text">
               <div class="title" data-swiper-parallax="-300" id="clock1"></div>
               <div class="title" data-swiper-parallax="-300">CHRONOSENSE</div>
               <div class="subtitle" data-swiper-parallax="-200">Never miss a beat with Chronosense, the watch 
@@ -113,7 +114,7 @@
         <div class="swiper-slide">
 
           <div class="row item-body">
-            <div class="col-md-6">
+            <div class="col-md-6 hero-text">
               <div class="title" data-swiper-parallax="-300" id="clock3"></div>
               <div class="title" data-swiper-parallax="-300">CHRONOSENSE</div>
               <div class="subtitle" data-swiper-parallax="-200">Never miss a beat with Chronosense, the watch 
@@ -130,32 +131,23 @@
 
         </div>
       </div>
-      <div class="swiper-button-next swiper-button-next-hero" style="right: 20px;"></div>
-      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next" style="right: 10px; top:300px; color: rgba(255, 255, 255, 0.548);"></div>
+      <!-- <div class="swiper-pagination" style="margin-bottom: 10px;"></div> -->
     </div>
   </div>
     
   <!--hero section end-->
 
-  
-  <!-- Text side image end [PPN] -->
-  <div class="text-side-image-con mt-5 py-5">
-    <!-- <div class="image"></div> -->
-    <img src="image/push-SP-Moonwatch-gold-cal3861-home-large.png" class="image" alt="">
-    <div class="wrapper">
-      <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi distinctio ea odit, error perspiciatis accusantium, natus quidem aut deleniti quos quisquam atque. Soluta rerum repudiandae ullam ad corporis odio. Eveniet sit consectetur optio dolores praesentium sapiente, soluta repudiandae molestias voluptatem! </p>
-      <a href="" class="btn btn-light btn-lg">Button</a>
-    </div>
-</div>
+
 
   <!--item carousel pyae sone-->
   <!--carousel 1-->
-  <div class="container-fluid px-4 ps pb-4">
-    <div class="row mt-5 pt-4">
+  <div class="container-fluid px-3 ps pb-4">
+    <div class="row customCarousel pt-5">
       <div class="col-md-5 d-flex align-items-center">
         <div class="heading ps-5">
           <h2>Meet our sport type watch</h2>
-          <p class="text-secondary">Timeless elegance meets modern design in every watch we create, perfect for those
+          <p>Timeless elegance meets modern design in every watch we create, perfect for those
             who appreciate both form and function.</p>
           <button>LEARN MORE</button>
         </div>
@@ -222,21 +214,38 @@
   </div>
   <!--end pyae sone-->
 
-  <!-- Text On Image [PPN] -->
-  <div class="text-on-img-con">
-    <img src="image/pexels-fstopper-1075189.jpg" class="image" alt="">
-    <p class="content ps-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maxime.</p>
+
+  <!-- Text side image end [PPN] -->
+  <div class="text-side-image-con py-5 bg-white">
+    <!-- <div class="image"></div> -->
+    <video src="image/In_The_Making-Video-Home-WEB-16_9.mp4" 
+    autoplay loop muted class="image"></video>
+    <!-- <img src="image/push-SP-Moonwatch-gold-cal3861-home-large.png" class="image" alt=""> -->
+    <div class="wrapper bg-black text-center text-white px-5 pt-2 pb-5">
+      <div class="content">
+        <h5>TOP CHOICE AWARD</h5>
+        <p>Lorem ipsum dolor sit amet consec.</p>
+      </div>
+      <a href="" class="btn btn-light btn-lg">More</a>
+    </div>
   </div>
-  <!-- Text On Image end [PPN] -->
 
 
 
   <!--item carousel pyae sone-->
   <!--carousel 2-->
   <div class="container-fluid px-4 ps pb-4">
-    <div class="row">
+    <div class="row customCarousel">
+      <div class="col-md-5 d-flex align-items-center">
+        <div class="heading text-start ps-5 pt-4">
+          <h2>Meet our Stylish watch</h2>
+          <p class="py-2">Designed for those who appreciate quality and style, our watches are a statement
+            piece that will never go out of fashion.</p>
+          <button>LEARN MORE</button>
+        </div>
+      </div>
 
-      <div class="col-md-7 order">
+      <div class="col-md-7">
 
         <div class="slide-container swiper">
           <div class="slide-content2">
@@ -293,25 +302,31 @@
           <div class="swiper-button-prev swiper-button-prev2"></div>
           <div class="swiper-pagination swiper-pagination2"></div>
         </div>
-
-      </div>
-
-      <div class="col-md-5 d-flex align-items-center">
-        <div class="heading text-end pe-5 pt-4">
-          <h2>Meet our Stylish watch</h2>
-          <p class="text-secondary">Designed for those who appreciate quality and style, our watches are a statement
-            piece that will never go out of fashion.</p>
-          <button>LEARN MORE</button>
-        </div>
       </div>
     </div>
   </div>
   <!--end pyae sone-->
+  
 
-  <div class="text-on-img-con">
+  <!--ppn-->
+  <div class="text-on-img-con mx-3">
     <img src="image/pexels-jeffrey-paa-kwesi-opare-2813515.jpg" class="image" alt="">
-    <p class="content right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maxime.</p>
+    <h2 class="content right pt-3">BIOCERAMIC: <br>
+      changing the watch game</h2>
   </div>
+  <!-- Text On Image [PPN] -->
+  <div class="text-on-img-con mx-3">
+    <img src="image/pexels-fstopper-1075189.jpg" class="image" alt="">
+    <h2 class="content pt-3">MoonSwatch on tour <br> around the world</h2>
+  </div>
+  <!-- Text On Image end [PPN] -->
+  <div class="text-on-img-con mx-3">
+    <img src="image/pexels-jeffrey-paa-kwesi-opare-2813515.jpg" class="image" alt="">
+    <h2 class="content right pt-3">BIOCERAMIC: <br>
+      changing the watch game</h2>
+  </div>
+
+
 
   <!--kyaw-->
   <div class="container-fluid bg-black">

@@ -7,7 +7,7 @@
         padding-right: 0!important;
     }
     .ps .heading button{
-        width: 100%;
+        width: 95%;
     }
     .ps .order{
         order: 2;
@@ -38,15 +38,17 @@
     .hero-carousel{
         padding-top: 100px;
     }
-    .video-background video {
-        
-    }
+
     .video-background{
         position: absolute;
     }
     /*carousel item end*/
 
     /* hero-section */
+    .hero .swiper {
+        width: 100%;
+        height: 850px;
+      }
     .hero .title{
         font-size: 30px!important;
     }
@@ -57,15 +59,27 @@
         justify-content: space-evenly;
     }
     .hero .item-body{
-        padding: 150px 20px 0 20px;
+        margin-top: 150px;
+        padding: 0 20px 0 20px;
     }
     .item-body .col-md-6{
-        padding-top: 40px;
+        /* padding-top: 40px; */
         padding-bottom: 40px;
     }
+    .hero .hero-image{
+        clip-path: none;
+        margin-bottom: 10px;
+      }
     .hero button{
         padding: 10px;
         outline-offset: 3px;
     }
+    .hero .hero-text{
+        padding-right: 50px!important;
+    }
 
+    /* collection */
+    .k-collect img{
+        margin-top: 30px;
+    }
 }
