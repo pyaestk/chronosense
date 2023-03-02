@@ -14,7 +14,7 @@
 }
 
 .search-input input{
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.363);
   height: 35px;
   width: 100%;
   outline: none;
@@ -30,16 +30,11 @@
 }
 
 .search-input .autocom-box{
-  padding: 0!important;
-  width: 100%;
-  border-top: 1px solid black;
+  padding: 0;
   opacity: 0;
   pointer-events: none;
-  /* max-height: 280px; */
+  max-height: 280px;
   overflow-y: auto;
-  position: absolute;
-  z-index: 1;
-  background-color: white;
 }
 
 .search-input.active .autocom-box{

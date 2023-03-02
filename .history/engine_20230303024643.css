@@ -30,16 +30,11 @@
 }
 
 .search-input .autocom-box{
-  padding: 0!important;
-  width: 100%;
-  border-top: 1px solid black;
+  padding: 0;
   opacity: 0;
   pointer-events: none;
-  /* max-height: 280px; */
+  max-height: 280px;
   overflow-y: auto;
-  position: absolute;
-  z-index: 1;
-  background-color: white;
 }
 
 .search-input.active .autocom-box{
